@@ -1,6 +1,9 @@
+import pygame
+from pygame.locals import *
+
 TILESIZE = 40
-MAPWIDTH = 5
-MAPHEIGHT = 5
+MAPWIDTH = 6
+MAPHEIGHT = 6
 
 DIRT = 0
 GRASS = 1
@@ -14,7 +17,7 @@ BLUE = (0, 0, 255)
 
 colors = {
     DIRT: BROWN,
-    GRASS: GREEN,
+    GRASS: pygame.image.load('./assets/grass.png'),
     WATER: BLUE,
     COAL: BLACK
 }
@@ -22,9 +25,10 @@ colors = {
 # A list representing a tilemap
 
 tilemap = [
-    [GRASS, GRASS, DIRT, DIRT, DIRT],
-    [GRASS, WATER, WATER, DIRT, DIRT],
-    [GRASS, COAL, DIRT, DIRT, DIRT],
-    [GRASS, GRASS, GRASS, DIRT, DIRT],
-    [GRASS, WATER, WATER, DIRT, DIRT]
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS],
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS],
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS],
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS],
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS],
+    [GRASS, GRASS, GRASS, GRASS, GRASS, GRASS]
 ]
